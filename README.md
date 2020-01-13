@@ -21,7 +21,6 @@ The *Data* folder include five pictures of chessboard. Each of them has differen
 # 3 Run the Project
 ## 3.1 Installation
 In order to run the python file, the following packages must be installed.
-
 ```
 # pip 
 sudo easy_install pip
@@ -35,6 +34,10 @@ pip install numpy
 # Argparse 
 pip install argparse
 ```
+## 3.2 Run the Program
+Launch the python edge_detector.py with the parameters: `input` [input filename]
+
+
 
 
 
