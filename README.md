@@ -14,6 +14,7 @@ The *Data* folder include five pictures of chessboard. Each of them has differen
 # 2 Implementation 
 ## 2.1 Noise Reduction
 
+
 ## 2.2 Threshold
 
 ## 2.3 edge detection
@@ -35,7 +36,7 @@ pip install numpy
 pip install argparse
 ```
 ## 3.2 Run the Program
-Launch the python edge_detector.py with the parameters: `input` [input filename]
+Launch the python edge_detector.py with the parameters `input` [input filename]
 
 
 
