@@ -71,7 +71,7 @@ The output image will be stored in the *output* folder.
 `python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`
 
 # Conclusion (possible improvements)
-    To get the edges of a chessboard, the edges should ideally be straight lines. Hough Line transformation can be a way for detecting lines after edges detection. To do this properly, we might need to define the minimum line length. We can set it if we know the length of each square in the chessboard. The method to measure the length is to find the corner of the square and calculate the distance between points. The idea will work well is there is no noise and the boundaries are clear.
+  To get the edges of a chessboard, the edges should ideally be straight lines. Hough Line transformation can be a way for detecting lines after edges detection. To do this properly, we might need to define the minimum line length. We can set it if we know the length of each square in the chessboard. The method to measure the length is to find the corner of the square and calculate the distance between points. The idea will work well is there is no noise and the boundaries are clear.
 
 
 
