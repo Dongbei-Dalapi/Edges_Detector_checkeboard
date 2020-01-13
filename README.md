@@ -11,11 +11,16 @@ The project has been developed using Python and open source libraries. In partic
 The *Data* folder include five pictures of chessboard. Each of them has different degree of noise and rotation.
 ![Figure_1](https://user-images.githubusercontent.com/38732983/72232658-cf88d480-35c2-11ea-9857-ba8e749ada43.png)
 
+# 2 Implementation 
 ## 2.1 Noise Reduction
 
 ## 2.2 Threshold
 
 ## 2.3 edge detection
+
+# 3 Run the Project
+## 3.1 Installation
+
 
 
 
