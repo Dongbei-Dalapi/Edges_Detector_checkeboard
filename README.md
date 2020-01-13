@@ -64,8 +64,8 @@ input
 By default launching only python edge_detector.py with an input image, the script use the Bilateral filter for noise removal and Canny for the edge detection. With --filter you can choose which filter to use between Averaging, Gaussian, Median and Bilateral. With --kernel you can provide a kernel stored in a tuple ([0.06, 0.1, 0.06],[0.1, 0.36, 0.1],[0.06, 0.1, 0.06]). With --detector you can choose which edge detection technique to use between Laplace, Sobel and Canny.
 The output image will be stored in the *output* folder.
 
-**Usage example**
-`cd {project_folder/src}`
+**Usage example** . 
+`cd {project_folder/src}`  
 `python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`
 
 
