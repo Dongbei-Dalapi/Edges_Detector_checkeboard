@@ -13,11 +13,18 @@ The *Data* folder include five pictures of chessboard. Each of them has differen
 
 # 2 Implementation 
 ## 2.1 Noise Reduction
-
+Since the mathematics involved behind the edge detection are mainly based on derivatives, the results are highly sensitive to image noise. One way to remov the noise on the image, is by applying filter to smooth it. To do so, image convolution technique can be applied with different Kernel. 
+There are four common filters for noise removal:
+1. Averaging 
+2. Gaussian 
+3. Median 
+4. Bilateral
 
 ## 2.2 Threshold
+Threshold is used to detect the edges more clearly when the checkerboard is not a black and white picture. 
 
-## 2.3 edge detection
+## 2.3 edges detection
+Edges detection aims to find the boundaries of objects within images.
 
 # 3 Run the Project
 ## 3.1 Installation
@@ -37,6 +44,8 @@ pip install argparse
 ```
 ## 3.2 Run the Program
 Launch the python edge_detector.py with the parameters `input` [input filename]
+cd {project_folder}
+
 
 
 
