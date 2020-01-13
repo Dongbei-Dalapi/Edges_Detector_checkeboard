@@ -65,8 +65,8 @@ By default launching only python edge_detector.py with an input image, the scrip
 The output image will be stored in the *output* folder.
 
 **Usage example**
-cd {project_folder/src}
-python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'
+`cd {project_folder/src}`
+`python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`
 
 
 
