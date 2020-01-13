@@ -7,6 +7,7 @@ The project has been developed using Python and open source libraries. In partic
 * OpenCV 
 * Numpy 
 * Argparse 
+* Abstract Syntax Trees
 
 ## 1.2 Data
 The *Data* folder include five pictures of chessboard. Each of them has different degree of noise and rotation.
