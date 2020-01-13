@@ -9,4 +9,5 @@ The project has been developed using Python and open source libraries. In partic
 
 ## 1.2 Data
 The *Data* folder include five pictures of chessboard. Each of them has different degree of noise and rotation.
+![Figure_1](https://user-images.githubusercontent.com/38732983/72232658-cf88d480-35c2-11ea-9857-ba8e749ada43.png)
 
