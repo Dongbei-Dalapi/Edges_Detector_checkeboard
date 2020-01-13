@@ -21,14 +21,20 @@ The *Data* folder include five pictures of chessboard. Each of them has differen
 # 3 Run the Project
 ## 3.1 Installation
 In order to run the python file, the following packages must be installed.
-    # pip 
-    sudo easy_install pip
-    # OpenCV (cv2)
-    pip install opencv-python
-    # Numpy
-    pip install numpy
-    # Argparse 
-    pip install argparse
+
+```
+# pip 
+sudo easy_install pip
+   
+# OpenCV (cv2)
+pip install opencv-python
+
+# Numpy
+pip install numpy
+
+# Argparse 
+pip install argparse
+```
 
 
 
