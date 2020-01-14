@@ -55,7 +55,7 @@ pip install numpy
 pip install argparse
 ```
 ## 3.2 Run the Program
-Launch the python edge_detector.py with the following parameters:Laplace, Sobel and Canny
+Launch the python edge_detector.py with the following parameters:
 ```
 input 
 --filter
