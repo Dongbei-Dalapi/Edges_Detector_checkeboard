@@ -67,10 +67,12 @@ if __name__ == '__main__':
 
     # noise reduction
     kernel = None
+    filter_type = args.filter
     if args.kernel:
         k = literal_eval(args.kernel)
         kernel = np.array(k, dtype="float32")
-    filtered_image = noise_filter(img_gray, mode=None, kernel=kernel)
+        filter_type = None
+    filtered_image = noise_filter(img_gray, mode=filter_type, kernel=kernel)
 
     # use threshold to convert image into black and white
     _, th = cv2.threshold(filtered_image, 170, 255, cv2.THRESH_BINARY)
