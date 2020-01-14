@@ -95,6 +95,3 @@ if __name__ == '__main__':
     file_type = filename[filename.index('.'):]
     whole_filename = new_filename + '_edges' + file_type
     cv2.imwrite(whole_filename, img_original)
-
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
