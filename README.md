@@ -26,7 +26,7 @@ The central element is always replaced by some pixel value in the image. It redu
 4. Bilateral :  
 Compared to the three filters above, it is more effective in smoothing while keeping edges sharp. The others filters tend to blur the edges.
 
-Self-defined kernel can also be applied. The kernek should be stored in a tuple such as ([ 0.0625, 0.125, 0.0625 ],[ 0.125, 0.25, 0.125 ],[ 0.0625, 0.125, 0.0625]) . 
+Self-defined kernel can also be applied. The kernel should be stored in a tuple such as ([ 0.0625, 0.125, 0.0625 ],[ 0.125, 0.25, 0.125 ],[ 0.0625, 0.125, 0.0625]) . 
 
 ## 2.2 Threshold
 Threshold is used to detect the edges more clearly when the checkerboard is not a black and white picture. 
@@ -68,8 +68,8 @@ The output image will be stored in the *output* folder.
 
 **Usage example**   
 `cd {project_folder/src}`  
-`python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`
-`python edge_detector.py '../data/Image_3.png'`
+`python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`  
+`python edge_detector.py '../data/Image_3.png'`  
 `python edge_detector.py '../data/Image_2.png' --filter None --kernel '([0.06, 0.1, 0.06],[0.1, 0.36, 0.1],[0.06, 0.1, 0.06])'`
 
 # Conclusion (possible improvements)
