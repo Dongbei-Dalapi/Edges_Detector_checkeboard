@@ -10,7 +10,10 @@ def noise_filter(image, mode=None, kernel=None):
         mode      the different choice of the filter('Averaging', 'Gaussian', 'Median' and 'Bilateral')
         kernel    self-defined kernel
     """
-    if mode.lower() == 'averaging':
+    # self-defined filter (kernel)
+    if mode is None and kernel is not None:
+        blur = cv2.filter2D(image, -1, kernel)
+    elif mode.lower() == 'averaging':
         blur = cv2.blur(image, (5, 5))
     elif mode.lower() == 'gaussian':
         blur = cv2.GaussianBlur(image, (5, 5), 0)
@@ -18,9 +21,6 @@ def noise_filter(image, mode=None, kernel=None):
         blur = cv2.medianBlur(image, 5)
     elif mode.lower() == 'bilateral':
         blur = cv2.bilateralFilter(image, 5, 75, 75)
-    # self-defined filter
-    elif mode is None and kernel is not None:
-        blur = cv2.filter2D(image, -1, kernel)
     # if no mode and no kernel, print error
     else:
         print('the mode or the kernel is not provided')
@@ -70,7 +70,7 @@ if __name__ == '__main__':
     if args.kernel:
         k = literal_eval(args.kernel)
         kernel = np.array(k, dtype="float32")
-    filtered_image = noise_filter(img_gray, mode=args.filter, kernel=kernel)
+    filtered_image = noise_filter(img_gray, mode=None, kernel=kernel)
 
     # use threshold to convert image into black and white
     _, th = cv2.threshold(filtered_image, 170, 255, cv2.THRESH_BINARY)
