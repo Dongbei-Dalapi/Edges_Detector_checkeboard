@@ -70,7 +70,7 @@ The output image will be stored in the *output* folder.
 `cd {project_folder/src}`  
 `python edge_detector.py '../data/Image_5.jpg' --filter 'Gaussian'`  
 `python edge_detector.py '../data/Image_3.png'`  
-`python edge_detector.py '../data/Image_2.png' --filter None --kernel '([0.06, 0.1, 0.06],[0.1, 0.36, 0.1],[0.06, 0.1, 0.06])'`
+`python edge_detector.py '../data/Image_2.png' --kernel '([0.06, 0.1, 0.06],[0.1, 0.36, 0.1],[0.06, 0.1, 0.06])'`
 
 # Conclusion (possible improvements)
 1. The improvement of noise reduction  
