@@ -34,9 +34,9 @@ Threshold is used to detect the edges more clearly when the checkerboard is not 
 ## 2.3 edge detection
 Edge detection aims to find the boundaries of objects within images.
 There are three common algorithm for edges detection:
-1. Laplace
-2. Sobel
-3. Canny
+1. Laplace : calculates second order derivatives in a single pass. 
+2. Sobel : calculates the first derivatives of the image separately for the X and Y axes.
+3. Canny : uses a multi-stage algorithm (five steps: 	1. Gaussian filter 2. Finding the intensity gradient of the image 3. Non-maximum suppression 4. Double threshold 5. Edge tracking by hysteresis)
 
 # 3 Run the Project
 ## 3.1 Installation
