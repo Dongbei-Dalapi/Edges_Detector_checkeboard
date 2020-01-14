@@ -52,7 +52,7 @@ def edge_detector(image, method='canny'):
 
 if __name__ == '__main__':
 
-    # input image as the argument
+    # set up the argument
     argp = argparse.ArgumentParser()
     argp.add_argument('image')
     argp.add_argument('--filter', default='bilateral')
@@ -78,17 +78,6 @@ if __name__ == '__main__':
     # edge detection
     edges = edge_detector(th, method=args.detector)
 
-    # lines
-    l = img_original.copy()
-    minLineLength = 70
-    maxLineGap = 2
-    lines = cv2.HoughLinesP(edges, 1, np.pi / 180, 100, minLineLength, maxLineGap)
-    for line in lines:
-        x1, y1, x2, y2 = line[0]
-        cv2.line(l, (x1, y1), (x2, y2), (0, 255, 0), 2)
-
-    cv2.imwrite('houghlines5.jpg', l)
-
     # draw edges
     for i in range(edges.shape[0]):
         for j in range(edges.shape[1]):
@@ -103,7 +92,6 @@ if __name__ == '__main__':
     new_filename = '../output/' + filename[:filename.index('.')]
     file_type = filename[filename.index('.'):]
     whole_filename = new_filename + '_edges' + file_type
-
     cv2.imwrite(whole_filename, img_original)
 
     # cv2.waitKey(0)
